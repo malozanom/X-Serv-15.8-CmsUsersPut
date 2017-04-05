@@ -11,7 +11,7 @@ def show(request):
         response = "Logged in as " + request.user.username + \
                    ". <a href='/logout'>Logout</a><br><br>"
     else:
-        response = "Not logged in. " + "<a href='/login'>Login</a><br><br>"
+        response = "Not logged in. <a href='/login'>Login</a><br><br>"
 
     content = Pages.objects.all()
     response += "Contenido de la base de datos:<br>"
