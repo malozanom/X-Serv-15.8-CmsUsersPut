@@ -46,7 +46,7 @@ def entry(request, identifier):
 
     try:
         entry = Pages.objects.get(id=identifier)
-        response += "La pagina solicitada es:" + "<br>" + entry.name + \
+        response += "La pagina solicitada es:<br>" + entry.name + \
                     " => " + entry.page
     except Pages.DoesNotExist:
         if user:
